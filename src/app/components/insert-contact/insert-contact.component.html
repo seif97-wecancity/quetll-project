@@ -1,0 +1,66 @@
+<div class="col-12 p-5  ar" style="background-color:#191970;">
+<div class="container">
+    <p class="text-white">الرئيسية > تواصل معنا</p>
+<h1 class="text-white">تواصل معنا</h1>
+</div>
+</div>
+<div class="container-fluid mt-5 mr-5">
+<div class="row">
+
+<div class="col-lg-6 col-sm-12  ar">
+    <div class="mapouter ">
+    <div class="gmap_canvas ">
+        <iframe width="600" height="500" class="rounded" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+
+        </iframe>
+        <a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google maps on web page</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+    </div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12  ar" >
+    <div class=" ">
+        
+        <form class="needs-validation mt-5 " style="margin-right: 120px;" autocomplete="off" [formGroup]="sendForm"
+        (ngSubmit)="onSubmit()" 
+        novalidate>
+            <div class="form-row ">
+                <!-- title  -->
+                <div class="col-8 mb-4 goleft" >
+                    <input class="form-control p-3" 
+                    type="text"
+                    [(ngModel)]="fullname"
+                    formControlName="firstName"
+                             placeholder="الاسم كاملاً *"
+                        />
+                </div>
+                <!-- title  -->
+                <div class="col-8 mb-4 goleft">
+                    <input class="form-control p-3" id="validation01" type="text" formControlName="email"
+                             placeholder="البريد الاكتروني *"
+                        />
+                </div>
+               
+              <div class="col-8 mb-4 goleft">
+                  <textarea class="form-control p-3 " placeholder="الرسالة" formControlName="description" id="floatingTextarea2" style="height: 200px"></textarea>  
+              </div>
+                
+            
+               
+             
+        
+                 
+            </div>
+        
+           
+           
+                <button [disabled]="button" class="btn col-8 text-white p-3 goleft" style="background-color: #191970;" type="submit">
+                 ارسال
+                </button>
+              
+         
+        </form>
+    </div>
+</div>
+
+</div>
+</div>
